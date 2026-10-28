@@ -1,7 +1,7 @@
 from Actions.action import Action
 from window_handler import WindowHandler
-import pyautogui
 import time
+
 
 class PressKeyAction(Action):
     def __init__(self, key: str, delay=0, retard=0, times=1):
@@ -13,11 +13,5 @@ class PressKeyAction(Action):
 
     def execute(self):
         time.sleep(self.delay)
-        self.window_handler.activate_window()
-        #pyautogui.press(self.key, presses=self.times)
-        pyautogui.keyDown(self.key)
-        time.sleep(1)
-        pyautogui.keyUp(self.key)
-        #press arrow left
-        
+        self.window_handler.hold_key(self.key, duration=1.0)
         return True  # Always return True since pressing a key will not fail

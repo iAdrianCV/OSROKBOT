@@ -13,6 +13,7 @@ This bot is not intended for mainstream users as it requires setup and likely so
 
 - **Farm Resources:** Farms resources at the automaticly chosen gatherers. For this, it is recommended that you use 720p res for now.
 ![Farming Resources](Media/Readme/farmrss.gif)
+- **Farm Gems (`farm_gems`):** Navigates the map in an expanding spiral using the keyboard arrow keys (`left`, `down`, `right`, `up`) to visually locate gem deposits and dispatch gathering marches automatically.
 - **Catcha Recogniztion:** Will pause when captcha is detected and email you. You can then manually solve the captcha and the bot will continue.
 - **Lyceum:** Will automatically do the lyceum event.
 ![Lyceum](Media/Readme/lyceum.gif)
